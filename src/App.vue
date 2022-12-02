@@ -97,11 +97,11 @@ const textTrueLoader = new THREE.TextureLoader();
     labelRenderer.domElement.style.position = "absolute"
     labelRenderer.domElement.style.top = "0px"
     labelRenderer.domElement.style.color = "#fff"
-    document.body.appendChild(labelRenderer.domElement)
+    canvasDom.value.appendChild(labelRenderer.domElement)
     // 开启渲染阴影
     renderer.shadowMap.enabled = true
     // 挂载画布对象
-    document.body.appendChild(renderer.domElement)
+    canvasDom.value.appendChild(renderer.domElement)
 
     // 绑定控制和摄像头
     const controls =  new OrbitControls( camera, renderer.domElement );
