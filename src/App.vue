@@ -65,7 +65,7 @@ const textTrueLoader = new THREE.TextureLoader();
 
     const moonDiv = document.createElement("div")
     moonDiv.className = "label"
-    moonDiv.textContent = "Earch"
+    moonDiv.textContent = "Moon"
     const moonLabel = new CSS2DObject(moonDiv)
     moonLabel.position.set(0, MOON_RADIUS + 0.5, 0)
     moon.add(moonLabel)
